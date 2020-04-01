@@ -24,7 +24,7 @@ AddEventHandler('playerConnecting', function()
         if info.status ~= 'fail' then
             TriggerClientEvent('pkl:showCountryWelcome', -1,'~c~' .. playername .. '~g~ connecting ~c~ from ' .. pais .. ' ' .. bandera)
         else
-            TriggerClientEvent('pkl:showCountryWelcome', -1,'~c~' .. playername .. '~g~ connecting ~c~ from ' .. pais .. ' ' .. bandera)
+            TriggerClientEvent('pkl:showCountryWelcome', -1,'~c~' .. playername .. '~g~ connecting ~c~ from N/A')
         end
     end, 'GET', json.encode({}), { ['Content-Type'] = 'application/json' })
 end)
